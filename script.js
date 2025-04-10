@@ -19,5 +19,25 @@ document.addEventListener('DOMContentLoaded',function(){
     
     const alternaconstraste = document.getElementById('alterna-constraste')
     
-    
+    let tamanhoAtualFonte = 1;
+
+    aumentaFonteBotao.addEventListener("click", function(){
+        tamanhoAtualFonte += 0.1;
+        document.body.style.fontSize = '${tamanhoAtualFonte}rem'
     })
+
+    diminiuFonteBotao.addEventListener("click", function(){
+        tamanhoAtualFonte += 0.1;
+        document.body.style.fontSize = '${tamanhoAtualFonte}rem'
+    })
+
+    alternaConstraste.addEventListener("click", function(){
+        document.body.classList.toggle('alto-contraste')
+    })
+ 
+})
+
+ScroollReveal().Reveal('#inicio', {delay: 500 });
+ScroollReveal().Reveal('#tripicalia', {delay: 500 });
+ScroollReveal().Reveal('#galeria', {delay: 500 });
+ScroollReveal().Reveal('#contato', {delay: 500 });
